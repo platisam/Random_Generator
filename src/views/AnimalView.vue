@@ -5,12 +5,10 @@
     </div>
     <div class="catFact" v-if="photo.personGender === 'female'">{{ photo.cat }}</div>
   </div>
-  <FormApp />
 </template>
 
 <script setup>
 import { usePhotoStore } from "@/stores/photo.js";
-import FormApp from "../components/FormApp.vue";
 
 const photo = usePhotoStore();
 </script>

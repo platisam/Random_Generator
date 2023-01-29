@@ -11,12 +11,14 @@
     </header>
 
     <RouterView />
+    <FormApp />
   </div>
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import { usePhotoStore } from "@/stores/photo.js";
+import FormApp from "@/components/FormApp.vue";
 
 const photo = usePhotoStore();
 </script>

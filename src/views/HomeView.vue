@@ -1,9 +1,5 @@
 <template>
-  <main>
-    <FormApp />
-  </main>
+  <main></main>
 </template>
 
-<script setup>
-import FormApp from "../components/FormApp.vue";
-</script>
+<script setup></script>
