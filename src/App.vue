@@ -34,6 +34,16 @@ h1 {
   text-transform: uppercase;
   font-family: "Viaoda Libre", cursive;
   text-shadow: 1px 5px 2px rgba(30, 46, 226, 0.25);
+  &::after {
+    content: "";
+    width: 130px;
+    height: 1.25px;
+    display: block;
+    background-color: rgb(30, 46, 226);
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
 }
 
 header {
