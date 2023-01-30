@@ -25,7 +25,7 @@ const photo = usePhotoStore();
 
 <style lang="scss" scoped>
 h1 {
-  margin-top: 600px;
+  margin-top: 60px;
   margin-bottom: 30px;
   color: rgb(30, 46, 226);
   font-size: 37px;

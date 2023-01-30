@@ -14,6 +14,12 @@ const photo = usePhotoStore();
 </script>
 
 <style scoped lang="scss">
+.dogPicture {
+  width: 200px;
+  img {
+    width: 100%;
+  }
+}
 .mainDiv {
   display: flex;
   justify-content: center;
