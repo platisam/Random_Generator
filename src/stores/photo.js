@@ -8,16 +8,17 @@ export const usePhotoStore = defineStore('photo', () => {
   const personNation = ref('')
   const dog = ref('')
   const cat = ref('')
-  const isLoading = ref(false)
+  const navIf = ref(false)
   
 
   function newName(personName) {
     const random = ref(Math.floor(Math.random() * 5))
+
     fetch(`https://api.agify.io/?name=${personName}`)
       .then((resp) => resp.json())
       .then((data) => {
         personAge.value = data.age;
-        isLoading.value = true;
+        navIf.value = true;
       });
 
     fetch(`https://api.genderize.io/?name=${personName}`)
@@ -46,5 +47,5 @@ export const usePhotoStore = defineStore('photo', () => {
       .then((data) => (personNation.value = data.country[random.value].country_id));
   }
 
-  return { personName, personAge, personGender, personNation, dog, cat, isLoading, newName }
+  return { personName, personAge, personGender, personNation, dog, cat, navIf, newName }
 })

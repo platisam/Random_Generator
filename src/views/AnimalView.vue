@@ -14,21 +14,24 @@ const photo = usePhotoStore();
 </script>
 
 <style scoped lang="scss">
-.dogPicture {
-  width: 200px;
-  img {
-    width: 100%;
-  }
-}
 .mainDiv {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 100vh;
+  .dogPicture {
+    width: 200px;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   .catFact {
-    margin-bottom: 20px;
-    padding: 15px;
-    max-width: 350px;
-    height: 350px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 400px;
+    height: 230px;
     text-align: justify;
     font-family: "Viaoda Libre", cursive;
     background-color: rgb(224, 226, 95);
@@ -44,7 +47,6 @@ const photo = usePhotoStore();
 
 @media (min-width: 1024px) {
   .dogPicture {
-    min-height: 100vh;
     display: flex;
     align-items: center;
   }

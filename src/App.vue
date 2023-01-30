@@ -1,7 +1,7 @@
 <template>
   <div class="center">
     <header>
-      <nav v-if="photo.isLoading">
+      <nav v-if="photo.navIf">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/animal">Animal</RouterLink>
       </nav>
@@ -24,38 +24,30 @@ const photo = usePhotoStore();
 </script>
 
 <style lang="scss" scoped>
+.center {
+  height: 100vh;
+}
 h1 {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 30px;
   color: rgb(30, 46, 226);
-  font-size: 37px;
+  font-size: 38px;
   font-weight: 700px;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: "Viaoda Libre", cursive;
   text-shadow: 1px 5px 2px rgba(30, 46, 226, 0.25);
-  &::after {
-    content: "";
-    width: 130px;
-    height: 1.25px;
-    display: block;
-    background-color: rgb(30, 46, 226);
-    margin: 0 auto;
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
 }
 
 header {
   line-height: 1.5;
-  max-height: 100vh;
+
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
 
   .pinia {
     display: block;
-    margin: 0 auto 40px;
+    margin: 0 auto 25px;
     height: 150px;
     width: 150px;
     box-shadow: 0 2px #989;
@@ -66,7 +58,7 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 nav a.router-link-exact-active {
