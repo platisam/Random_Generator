@@ -25,7 +25,7 @@ const photo = usePhotoStore();
 
 <style lang="scss" scoped>
 .center {
-  height: 100vh;
+  max-height: 100vh;
 }
 h1 {
   margin-top: 50px;
@@ -86,12 +86,6 @@ nav a:first-of-type {
 
   .logo {
     margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 
   nav {

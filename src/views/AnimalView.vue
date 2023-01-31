@@ -18,10 +18,12 @@ const photo = usePhotoStore();
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  //max-height: 100vh;
+
   .dogPicture {
-    width: 200px;
-    height: 200px;
+    width: 235px;
+    height: 235px;
+    border: 2px solid rgb(220, 220, 53);
     img {
       width: 100%;
       height: 100%;
@@ -41,7 +43,7 @@ const photo = usePhotoStore();
     align-items: center;
     font-size: 20px;
     border-radius: 30px;
-    border: 1px solid rgb(230, 230, 240);
+    border: 1px solid rgb(204, 147, 41);
   }
 }
 

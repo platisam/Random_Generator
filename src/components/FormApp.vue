@@ -4,6 +4,7 @@
       <input type="text" id="test" v-model="photo.personName" />
       <button @click="photo.newName(photo.personName)">click</button>
     </div>
+
     <h3>Age: {{ photo.personAge }}</h3>
     <h3>Gender: {{ photo.personGender }}</h3>
     <h3>Nationality: {{ photo.personNation }}</h3>
