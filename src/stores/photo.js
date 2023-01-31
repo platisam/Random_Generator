@@ -9,6 +9,7 @@ export const usePhotoStore = defineStore('photo', () => {
   const dog = ref('')
   const cat = ref('')
   const navIf = ref(false)
+  const showInfo = ref(false)
   
 
   function newName(personName) {
@@ -19,6 +20,7 @@ export const usePhotoStore = defineStore('photo', () => {
       .then((data) => {
         personAge.value = data.age;
         navIf.value = true;
+        showInfo.value = true
       });
 
     fetch(`https://api.genderize.io/?name=${personName}`)
@@ -47,5 +49,5 @@ export const usePhotoStore = defineStore('photo', () => {
       .then((data) => (personNation.value = data.country[random.value].country_id));
   }
 
-  return { personName, personAge, personGender, personNation, dog, cat, navIf, newName }
+  return { personName, personAge, personGender, personNation, dog, cat, navIf, showInfo, newName }
 })

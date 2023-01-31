@@ -41,7 +41,6 @@ h1 {
 
 header {
   line-height: 1.5;
-
   display: flex;
   flex-direction: column;
 
@@ -58,7 +57,7 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 nav a.router-link-exact-active {
@@ -93,8 +92,8 @@ nav a:first-of-type {
     margin-left: -1rem;
     font-size: 1.5rem;
 
-    padding: 1rem 0;
-    margin-top: 1rem;
+    //padding: 1rem 0;
+    margin-top: 25px;
   }
 }
 </style>

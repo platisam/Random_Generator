@@ -4,10 +4,11 @@
       <input type="text" id="test" v-model="photo.personName" />
       <button @click="photo.newName(photo.personName)">click</button>
     </div>
-
-    <h3>Age: {{ photo.personAge }}</h3>
-    <h3>Gender: {{ photo.personGender }}</h3>
-    <h3>Nationality: {{ photo.personNation }}</h3>
+    <div class="show" v-show="photo.showInfo">
+      <h3>Age: {{ photo.personAge }}</h3>
+      <h3>Gender: {{ photo.personGender }}</h3>
+      <h3>Nationality: {{ photo.personNation }}</h3>
+    </div>
   </div>
 </template>
 
@@ -33,7 +34,7 @@ const photo = usePhotoStore();
     align-items: center;
     input {
       padding: 10px 20px;
-      margin: 10px 0;
+      margin: 15px 0;
       font-size: 18px;
       display: inline-block;
       border: 1px solid #1e2ee2;
