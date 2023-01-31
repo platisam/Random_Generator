@@ -1,7 +1,7 @@
 <template>
   <div class="center">
     <header>
-      <nav v-if="photo.navIf">
+      <nav v-if="photo.navInfo">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/animal">Animal</RouterLink>
       </nav>
