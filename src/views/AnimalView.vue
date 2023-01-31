@@ -18,7 +18,6 @@ const photo = usePhotoStore();
   display: flex;
   justify-content: center;
   align-items: center;
-  //max-height: 100vh;
 
   .dogPicture {
     width: 235px;
